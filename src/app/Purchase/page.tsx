@@ -19,14 +19,15 @@ const page = () => {
                       <option className="option-purchase" value="">Assasins Creed</option>
                       </select>
                       <select className="select-info-purchase" name="" id="">
-                      <option className="option-purchase" value="">Riders Republic</option>
-                      <option className="option-purchase" value="">Valorant</option>
-                      <option className="option-purchase" value="">Assasins Creed</option>
+                      <option className="option-purchase" value="">Price</option>
+                      <option className="option-purchase" value="">20$ per month</option>
+                      <option className="option-purchase" value="">120$ per year</option>
                       </select>
                       <select className="select-info-purchase" name="" id="">
-                      <option className="option-purchase" value="">Riders Republic</option>
-                      <option className="option-purchase" value="">Valorant</option>
-                      <option className="option-purchase" value="">Assasins Creed</option>
+                      <option className="option-purchase" value="">Mode</option>
+                      <option className="option-purchase" value="">PC</option>
+                      <option className="option-purchase" value="">PS4</option>
+                      <option className="option-purchase" value="">XBOX</option>
                       </select>
                       <button className="purchase-button">Purchase</button>
                   </div>
