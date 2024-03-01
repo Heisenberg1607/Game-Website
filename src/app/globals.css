@@ -9,17 +9,18 @@
 
 .video-bg {
   height: 100vh;
-  position: fixed;
+  position: relative;
   z-index: -1;
   top: 0;
   left: 0;
   width: 110%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
 .hero {
   width: 100%;
+  perspective: 10px;
 }
 .container {
   height: 100vh;
@@ -62,55 +63,88 @@ body {
 }
 
 .btn {
-    position: relative;
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 27px;
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    text-decoration: none;
-    color: black;
-    background: yellow;
-    border: 3px solid #999999;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    -webkit-transition: ease-out 0.5s;
-    -moz-transition: ease-out 0.5s;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border: 3px solid #999999;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
 }
-
 
 .btn.btn-border-4::after,
 .btn.btn-border-4::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0;
-    transition: .5s;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: 0.5s;
 }
 
 .btn.btn-border-4::after {
-    top: -9px;
-    left: -9px;
-    border-top: 3px solid transparent;
-    border-left: 3px solid transparent;
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 .btn.btn-border-4::before {
-    bottom: -9px;
-    right: -9px;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
 }
 
 .btn.btn-border-4:hover {
-    color: #222222;
+  color: #222222;
 }
 
 .btn.btn-border-4:hover::after,
 .btn.btn-border-4:hover::before {
-    width: calc(100% + 15px);
-    height: calc(100% + 15px);
-    border-color: white;
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border-color: white;
 }
 
+.com-image {
+  width: 150px;
+  height: 150px;
+}
+
+.join-community {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; /* Adjust padding as needed */
+}
+
+.left-com-section {
+  flex: 1; /* Take up remaining space */
+  text-align: center;
+  color: black; /* Adjust text color */
+}
+
+.left-com-section h1 {
+  font-size: 36px; /* Adjust font size */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.left-com-section p {
+  font-size: 18px; /* Adjust font size */
+}
+
+.right-com-section {
+  background-image: url("./wallpaperflare.com_wallpaper_4_-removebg-preview.png");
+  width: 30%; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+}

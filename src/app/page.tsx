@@ -7,6 +7,8 @@ import Navbar from "./Navbar/page";
 
 export default function Home() {
 
+ 
+
   
   return (
     <>
@@ -24,6 +26,8 @@ export default function Home() {
           <h1 className="hello">Riders Republic</h1>
           <button className="btn btn-border-4">Play Free</button>
       </div>
+
+        
       </div>
       
     </>

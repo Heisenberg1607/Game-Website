@@ -1,5 +1,8 @@
 import React from 'react'
 import "../Navbar/navbar.css";
+import Link from 'next/link';
+
+// About Media News Purchase Social-Media Contact-Us
 
 
 const Navbar = () => {
@@ -12,9 +15,12 @@ const Navbar = () => {
         <div className="guide-btns">
           <ul className="list-btns">
             <div className="nav-links">
-              <li>Home</li> 
-              <li>About Us</li> 
-              <li>Community</li>
+              <li className="home-nav-link">
+                <Link href="/">Home</Link></li> 
+              <li><Link href="/AboutUs">About Us</Link></li> 
+              <li><Link href="/News">News</Link></li> 
+              <li><Link href="/Purchase">Purchase</Link></li>
+              <li><Link href="Contact Us">Contact Us</Link></li> 
             </div>
             
             <li className="log-in-div">

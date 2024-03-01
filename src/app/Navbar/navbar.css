@@ -34,6 +34,7 @@
   color: white;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 
 .list-btns {
@@ -42,17 +43,25 @@
   padding: 35px;
   font-family: "Valorant" sans-serif;
   letter-spacing: 1px;
-  width: 30rem;
+  width: 40rem;
   color: white;
   background-color: black;
   justify-content: space-between;
   font-size: small;
+
 }
 
 .nav-links {
   display: flex;
 }
 
+.nav-links li:hover{
+  cursor:pointer;
+  color:yellow;
+}
+.home-nav-link{
+  color:yellow;
+}
 .nav-links li {
   padding-right: 18px;
   margin-right: 10px;
@@ -63,4 +72,13 @@
   height: 30px;
   background-color: yellow;
   border: 1px solid black;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: yellow;
 }
