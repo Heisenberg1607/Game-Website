@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container">
           
         <video autoPlay loop muted playsInline className="video-bg">
-          <source src="/Assets/VideoBG.mp4" type="video/mp4"/>
+          <source src="/assets/VideoBG.mp4" type="video/mp4"/>
         </video>
         
       </div>
